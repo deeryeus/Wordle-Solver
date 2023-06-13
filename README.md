@@ -7,11 +7,13 @@ Wordle Solver is a script tool that solves Wordle puzzles. Users can input their
 The tool analyzes the Wordle word bank to find the most commonly used letters within each placement of a five-letter word. It calculates a "score" by breaking down the order that the letters appear in a word and compares it to the overall frequency those letters appear in that same placement throughout the word bank. The tool provides the word, or words, with the highest score as its output.
 
 For example, let's look at the word "SCARE". The tool breaks down each letter of the word, in order, and compares it to how many times those letters appear in that same placement when compared to all possible word choices. Frequencies for "SCARE" would be measured like this:
+
 "S" = 366
 "C" = 40
 "A" = 307
 "R" = 152
 "E" = 424
+
 What this means is that the letter "S" shows up 366 times out of all the words in the word bank when it is used as the first letter. The letter "C" occurs 40 times when it is the second letter, and so-on. The score is then calculated as an aggregation of these frequencies:
 366 + 40 + 307 + 152 + 424 = 1289
 
